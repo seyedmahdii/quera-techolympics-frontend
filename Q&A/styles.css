@@ -1,0 +1,41 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 20px;
+}
+
+details {
+  background-color: #e4eaef;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.question_title {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+details[open] .question_answer {
+  animation: fadeIn ease 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.question_answer {
+  background-color: #30353b;
+  color: #fff9f1;
+  border-radius: 5px;
+  margin: 0;
+  padding: 8px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
